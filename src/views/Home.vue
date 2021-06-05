@@ -13,6 +13,7 @@
               prepend-inner-icon="mdi-magnify"
               label="Copacabana"
               class="input"
+              height="58"
               solo
           ></v-text-field>
           <v-row class="justify-center">
@@ -22,7 +23,8 @@
                 block
                 large
                 elevation="2"
-                min-width="200"
+                min-width="230"
+                height="40"
                 tile
                 class="white--text"
               >
