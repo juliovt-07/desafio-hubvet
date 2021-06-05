@@ -11,10 +11,10 @@
                 </svg>
                 <span>COPYRIGHT &#64; {{ new Date().getFullYear() }}</span>
                 <img
-                  src="../assets/logo.png"
-                  class="px-1"
+                  src="../assets/logo2.png"
+                  class="mx-1"
                   alt="logo"
-                  height="24"
+                  height="16"
                 >
                 <span>, All rights Reserved</span>
               </v-row>
@@ -38,10 +38,10 @@
 <style lang="sass">
   .footer
     position: absolute
-    bottom: 10px
+    bottom: 8px
     left: 0px
     right: 0px
     span
-      font-size: 12px
+      font-size: 10px
       line-height: 13.5px
 </style>
