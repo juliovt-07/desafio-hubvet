@@ -16,11 +16,15 @@
               solo
           ></v-text-field>
           <v-row class="justify-center">
-            <v-col cols="6">
+            <v-col cols="7">
               <v-btn
-                  tile
-                  color="success"
-                  class="py-4 px-10 mx-auto"
+                color="#44BBA4"
+                block
+                large
+                elevation="2"
+                min-width="200"
+                tile
+                class="white--text"
               >
                 Pesquisar
               </v-btn>
