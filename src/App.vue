@@ -27,4 +27,6 @@ export default {
     min-height: 90vh
     min-width: 90vw
     overflow: hidden
+  #app
+    background: #F5F6F8
 </style>
