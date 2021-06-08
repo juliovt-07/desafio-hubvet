@@ -44,4 +44,9 @@
     span
       font-size: 10px
       line-height: 13.5px
+  @media screen and (max-width: 425px)
+    .footer img, .footer svg
+      transform: scale(0.9)
+    .footer span:nth-child(5)
+      display: none
 </style>
