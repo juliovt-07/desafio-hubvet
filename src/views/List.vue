@@ -1,13 +1,17 @@
 <template>
   <v-container>
-
+    <TopBar/>
   </v-container>
 </template>
 
 <script>
+import TopBar from "@/components/TopBar";
 
   export default {
-    name: 'List'
+    name: 'List',
+    components: {
+      TopBar
+    }
   }
 </script>
 
