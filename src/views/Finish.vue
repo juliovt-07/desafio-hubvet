@@ -48,18 +48,6 @@
         gap: 60px
         align-items: center
         justify-content: space-between
-      .logo
-        position: relative
-        display: grid
-        grid-template-columns: auto
-        figcaption
-          font-family: 'Roboto Slab', serif
-          text-align: right
-          position: absolute
-          right: 0
-          bottom: 14px
-          font-size: 18px
-          color: #44BBA4
       .text-center
         font-size: 20px
         color: #44BBA4
