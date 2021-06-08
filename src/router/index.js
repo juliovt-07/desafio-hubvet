@@ -11,6 +11,11 @@ const routes = [
     component: Home
   },
   {
+    path: '/list-items',
+    name: 'List',
+    component: () => import('../views/List.vue')
+  },
+  {
     path: '/finish',
     name: 'Finish',
     component: () => import('../views/Finish.vue')
