@@ -1,7 +1,7 @@
 <template>
   <v-container class="items-list">
     <TopBar/>
-    <v-row align="center">
+    <v-row align="top">
       <v-col cols="10">
         <ItemsList/>
       </v-col>
