@@ -2,7 +2,7 @@
   <v-container>
     <v-data-table
         :headers="headers"
-        :items="desserts"
+        :items="destinatios"
         :items-per-page="4"
         class="elevation-1"
         v-model="selected"
@@ -38,7 +38,7 @@
         { text: 'Preço (R$)', value: 'price' },
         { text: 'Etiquetas', value: 'labels' }
       ],
-      desserts: [
+      destinatios: [
         {
           code: 'HP556',
           name: 'Final de ano em Copacabana',
