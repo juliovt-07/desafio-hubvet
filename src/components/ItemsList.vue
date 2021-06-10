@@ -5,6 +5,9 @@
         :items="desserts"
         :items-per-page="4"
         class="elevation-1"
+        v-model="selected"
+        item-key="name"
+        show-select
     ></v-data-table>
   </v-container>
 </template>
@@ -14,10 +17,11 @@
     name: 'TopBar',
 
     data: () => ({
+      selected: [],
       headers: [
         {
           align: 'start',
-          sortable: true,
+          sortable: false,
         },
         { text: 'Código', value: 'code' },
         { text: 'Nome', value: 'name' },
