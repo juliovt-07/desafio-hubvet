@@ -102,10 +102,10 @@
       ]
     }),
     methods: {
-      getColor (calories) {
-        if (calories === 'promocao') return '#FF4A4A'
-        else if (calories === 'novos') return '#FFA800'
-        else if (calories === 'ultimosdias') return '#DB00FF'
+      colorLabels (label) {
+        if (label === 'promocao') return '#FF4A4A'
+        else if (label === 'novos') return '#FFA800'
+        else if (label === 'ultimosdias') return '#DB00FF'
       },
     }
   }
