@@ -1,0 +1,62 @@
+[
+  {
+    "code": "HP556",
+    "name": "Final de ano em Copacabana",
+    "price": "7.591,70",
+    "labels": ["promocao", "novos", "ultimosdias"]
+  },
+  {
+    "code": "HP504",
+    "name": "Carnaval em Copacabana",
+    "price": "6.266,10",
+    "labels": ["promocao", "novos", "ultimosdias"]
+  },
+  {
+    "code": "HP556",
+    "name": "Feriadão em Copacabana",
+    "price": "2.190,75",
+    "labels": ["promocao", "novos", "ultimosdias"]
+  },
+  {
+    "code": "HP589",
+    "name": "Semana Santa em Copacabana",
+    "price": "3.490,11",
+    "labels": ["promocao", "novos", "ultimosdias"]
+  },
+  {
+    "code": "HP511",
+    "name": "Final de ano em Copacabana",
+    "price": "7.591,70",
+    "labels": ["promocao", "novos"]
+  },
+  {
+    "code": "HP556",
+    "name": "Carnaval em Copacabana",
+    "price": "6.266,10",
+    "labels": ["promocao", "ultimosdias"]
+  },
+  {
+    "code": "HP511",
+    "name": "Feriadão em Copacabana",
+    "price": "2.190,75",
+    "labels": ["novos"]
+  },
+  {
+    "code": "HP556",
+    "name": "Semana Santa em Copacabana",
+    "price": "3.490,11",
+    "labels": ["novos", "ultimosdias"]
+  },
+  {
+    "code": "HP504",
+    "name": "Final de ano em Copacabana",
+    "price": "7.591,70",
+    "labels": ["promocao", "novos", "ultimosdias"]
+  },
+  {
+    "code": "HP556",
+    "name": "Carnaval em Copacabana",
+    "price": "6.266,10",
+    "labels": ["ultimosdias"]
+  }
+]
