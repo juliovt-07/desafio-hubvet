@@ -21,7 +21,7 @@
                 <SelectDefault/>
             </v-col>
             <v-col cols="12" sm="4">
-
+                <InputText/>
             </v-col>
             <v-col cols="12" sm="4">
 
@@ -55,11 +55,13 @@
 
 <script>
 import SelectDefault from "@/components/SelectDefault";
+import InputText from "@/components/InputText";
 
   export default {
     name: 'Home',
     components: {
-      SelectDefault
+      SelectDefault,
+      InputText
     }
   }
 </script>
