@@ -29,7 +29,7 @@
 
         </v-col>
         <v-col cols="6" sm="5" lg="4">
-
+          <SelectChips class="mb-1"/>
         </v-col>
       </v-row>
       <v-row class="justify-center mb-10">
@@ -55,12 +55,14 @@
 <script>
 import SelectDefault from "@/components/SelectDefault";
 import InputText from "@/components/InputText";
+import SelectChips from "@/components/SelectChips";
 
   export default {
     name: 'Home',
     components: {
       SelectDefault,
-      InputText
+      InputText,
+      SelectChips
     }
   }
 </script>
