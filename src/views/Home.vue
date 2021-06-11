@@ -70,6 +70,5 @@ import SelectDefault from "@/components/SelectDefault";
     display: grid
     align-items: center
     .input div
-      padding: 11px
       border-radius: 8px
 </style>
