@@ -16,6 +16,20 @@
               height="58"
               solo
           ></v-text-field>
+          <v-row no-gutters>
+            <v-col cols="12" sm="4">
+                <SelectDefault/>
+            </v-col>
+            <v-col cols="12" sm="4">
+
+            </v-col>
+            <v-col cols="12" sm="4">
+
+            </v-col>
+            <v-col cols="12" sm="4">
+
+            </v-col>
+          </v-row>
           <v-row class="justify-center">
             <v-col cols="7">
               <v-btn
@@ -40,9 +54,13 @@
 </template>
 
 <script>
+import SelectDefault from "@/components/SelectDefault";
 
   export default {
-    name: 'Home'
+    name: 'Home',
+    components: {
+      SelectDefault
+    }
   }
 </script>
 
