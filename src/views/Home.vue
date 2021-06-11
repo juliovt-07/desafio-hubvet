@@ -16,37 +16,36 @@
               height="58"
               solo
           ></v-text-field>
-          <v-row no-gutters>
-            <v-col cols="12" sm="4">
-                <SelectDefault/>
-            </v-col>
-            <v-col cols="12" sm="4">
-                <InputText/>
-            </v-col>
-            <v-col cols="12" sm="4">
+        </v-col>
+      </v-row>
+      <v-row no-gutters justify="center" align="center">
+        <v-col cols="6" sm="4" lg="2">
+          <SelectDefault/>
+        </v-col>
+        <v-col cols="6" sm="4" lg="2">
+          <InputText/>
+        </v-col>
+        <v-col cols="4" sm="3" lg="2">
 
-            </v-col>
-            <v-col cols="12" sm="4">
+        </v-col>
+        <v-col cols="6" sm="5" lg="4">
 
-            </v-col>
-          </v-row>
-          <v-row class="justify-center">
-            <v-col cols="7">
-              <v-btn
-                color="#44BBA4"
-                block
-                large
-                elevation="2"
-                min-width="230"
-                height="40"
-                tile
-                class="white--text"
-              >
-                Pesquisar
-              </v-btn>
-            </v-col>
-          </v-row>
-
+        </v-col>
+      </v-row>
+      <v-row class="justify-center mb-10">
+        <v-col cols="7" md="2" sm="3">
+          <v-btn
+              color="#44BBA4"
+              block
+              large
+              elevation="2"
+              max-width="20"
+              height="40"
+              tile
+              class="white--text"
+          >
+            Pesquisar
+          </v-btn>
         </v-col>
       </v-row>
     </v-card>  
