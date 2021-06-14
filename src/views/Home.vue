@@ -26,8 +26,8 @@
         <v-col cols="6" sm="4" lg="2">
           <InputText @update-city="updateCity"/>
         </v-col>
-        <v-col cols="4" sm="3" lg="2">
-
+        <v-col sm="3" lg="1" class="mt-n5 mx-3">
+          <CustomRadio/>
         </v-col>
         <v-col cols="6" sm="5" lg="4">
           <SelectChips class="mb-1" @update-select-chips="updateSelectChips"/>
@@ -58,6 +58,7 @@
 <script>
 import SelectDefault from "@/components/SelectDefault";
 import InputText from "@/components/InputText";
+import CustomRadio from "@/components/CustomRadio";
 import SelectChips from "@/components/SelectChips";
 
   export default {
@@ -65,6 +66,7 @@ import SelectChips from "@/components/SelectChips";
     components: {
       SelectDefault,
       InputText,
+      CustomRadio,
       SelectChips
     },
     data: () => ({
