@@ -20,17 +20,17 @@
         </v-col>
       </v-row>
       <v-row no-gutters justify="center" align="center">
-        <v-col cols="6" sm="4" lg="2">
+        <v-col sm="2" lg="2" class="mx-3">
           <SelectDefault @update-select-default="updateSelectDefault"/>
         </v-col>
-        <v-col cols="6" sm="4" lg="2">
+        <v-col sm="2" lg="2" class="mx-3">
           <InputText @update-city="updateCity"/>
         </v-col>
         <v-col sm="3" lg="1" class="mt-n5 mx-3">
           <CustomRadio/>
         </v-col>
-        <v-col cols="6" sm="5" lg="4">
-          <SelectChips class="mb-1" @update-select-chips="updateSelectChips"/>
+        <v-col sm="6" lg="4"  class="mb-1 mx-3">
+          <SelectChips @update-select-chips="updateSelectChips"/>
         </v-col>
       </v-row>
       <v-row class="justify-center mb-13">
