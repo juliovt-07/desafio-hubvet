@@ -3,7 +3,7 @@
     <span class="label">Etiquetas</span>
     <v-select
         v-model="selected"
-        class="select-chips mt-n5"
+        class="select-chips mt-n6"
         :items="items"
         item-text="label"
         chips
