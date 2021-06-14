@@ -6,6 +6,7 @@
         <v-text-field
             prepend-inner-icon="mdi-magnify"
             label="Copacabana"
+            :value="$route.params.filter.keyword"
             solo
         ></v-text-field>
       </v-col>
