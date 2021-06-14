@@ -20,7 +20,7 @@
         <SelectChips/>
       </v-col>
     </v-row>
-    <v-row align="top">
+    <v-row align="top" class="mt-n10">
       <v-col cols="9">
         <ItemsList/>
       </v-col>
