@@ -2,10 +2,13 @@
   <v-container class="select-content">
     <span>Buscar por</span>
     <v-select
+        v-model="selected"
         class="select-input mt-n5"
         :items="items"
+        item-text="label"
         label="Todos"
         single-line
+        @change="updateSelectDefault()"
     ></v-select>
   </v-container>
 </template>
@@ -13,10 +16,21 @@
 <script>
   export default {
     name: 'SelectDefault',
-
     data: () => ({
-      items: ['Todos', 'Voos', 'Hotéis', 'Carros', 'Pacotes']
+      selected: '',
+      items: [
+        { label: 'Todos', value: 'todos' },
+        { label: 'Voos', value: 'voos' },
+        { label: 'Hotéis', value: 'hoteis' },
+        { label: 'Carros', value: 'carros' },
+        { label: 'Pacotes', value: 'pacotes' }
+      ]
     }),
+    methods: {
+      updateSelectDefault() {
+        this.$emit('update-select-default', this.selected)
+      }
+    }
   }
 </script>
 

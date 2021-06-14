@@ -4,6 +4,8 @@
     <v-text-field
         class="text-input mt-n5"
         label="Cidade"
+        v-model="city"
+        @change="updateCity"
         single-line
     ></v-text-field>
   </v-container>
@@ -12,9 +14,14 @@
 <script>
   export default {
     name: 'InputText',
-
     data: () => ({
+      city: ''
     }),
+    methods: {
+      updateCity() {
+        this.$emit('update-city', this.city)
+      }
+    }
   }
 </script>
 

@@ -9,6 +9,7 @@
         chips
         multiple
         single-line
+        @change="updateSelectChips"
     >
       <template v-slot:selection="{ item }">
         <v-chip
@@ -43,6 +44,9 @@
       },
       removeItem(value) {
         this.selected.splice(this.selected.indexOf(value), 1);
+      },
+      updateSelectChips() {
+        this.$emit('update-select-chips', this.selected)
       }
     }
   }

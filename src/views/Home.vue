@@ -10,6 +10,7 @@
             height="90"
           />
           <v-text-field
+              v-model="filter.keyword"
               prepend-inner-icon="mdi-magnify"
               label="Copacabana"
               class="input"
@@ -20,19 +21,19 @@
       </v-row>
       <v-row no-gutters justify="center" align="center">
         <v-col cols="6" sm="4" lg="2">
-          <SelectDefault/>
+          <SelectDefault @update-select-default="updateSelectDefault"/>
         </v-col>
         <v-col cols="6" sm="4" lg="2">
-          <InputText/>
+          <InputText @update-city="updateCity"/>
         </v-col>
         <v-col cols="4" sm="3" lg="2">
 
         </v-col>
         <v-col cols="6" sm="5" lg="4">
-          <SelectChips class="mb-1"/>
+          <SelectChips class="mb-1" @update-select-chips="updateSelectChips"/>
         </v-col>
       </v-row>
-      <v-row class="justify-center mb-10">
+      <v-row class="justify-center mb-13">
         <v-col cols="7" md="2" sm="3">
           <v-btn
               color="#44BBA4"
@@ -44,7 +45,9 @@
               tile
               class="white--text"
           >
-            Pesquisar
+            <router-link class="text-decoration-none white--text" :to="{ name: 'List', params: { filter: filter } }">
+              Pesquisar
+            </router-link>
           </v-btn>
         </v-col>
       </v-row>
@@ -63,6 +66,26 @@ import SelectChips from "@/components/SelectChips";
       SelectDefault,
       InputText,
       SelectChips
+    },
+    data: () => ({
+      filter: {
+        keyword: '',
+        type: '',
+        city: '',
+        valueOrder: '',
+        labels: []
+      }
+    }),
+    methods: {
+      updateSelectDefault(value) {
+        this.filter.type = value
+      },
+      updateCity(value) {
+        this.filter.city = value
+      },
+      updateSelectChips(value) {
+        this.filter.labels = value
+      },
     }
   }
 </script>
