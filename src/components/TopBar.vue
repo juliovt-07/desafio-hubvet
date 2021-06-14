@@ -5,12 +5,13 @@
         flat
         color="#FFF"
         dense
+        class="px-3"
     >
-      <img src="../assets/logo.png" alt="logo" :width="imgSize">
+      <img src="../assets/logo.png" alt="logo" id="logo" class="ml-n16">
 
       <v-spacer></v-spacer>
 
-      <svg :width="svgSize" :height="svgSize" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg class="mr-2" :width="svgSize" :height="svgSize" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
         <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="46" height="46">
           <ellipse cx="23" cy="23" rx="23" ry="23" fill="#E5E5E5"/>
         </mask>
@@ -43,5 +44,6 @@
 </script>
 
 <style lang="sass">
-
+#logo
+  transform: scale(0.4)
 </style>

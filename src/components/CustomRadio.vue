@@ -1,6 +1,6 @@
 <template>
   <v-container class="custom-radio-content">
-    <span>Milhas ou R$</span>
+    <span>{{ label }}</span>
       <div class="custom-radios mt-n1">
         <input class="d-none" type="radio" name="valueOrder" id="radio-1" />
         <label for="radio-1" @click="radioSelect('milhas')">
@@ -21,6 +21,12 @@
 <script>
   export default {
     name: 'CustomRadio',
+    props: {
+      label: {
+        type: String,
+        required: false
+      }
+    },
     data: () => ({
       radioSelected: null,
       svgSize: 20

@@ -1,30 +1,26 @@
 [
   {
     "code": "HP556",
-    "origin": "CGH - Congonhas",
-    "destiny": "SDU - Santos Dumont",
-    "miles": 3.227,
+    "city": "Congonhas",
+    "price": "R$ 80,00/dia",
     "labels": ["promocao"]
   },
   {
     "code": "HP504",
-    "origin": "SDU - Santos Dumont",
-    "destiny": "CGH - Congonhas",
-    "miles": 2.621,
+    "city": "Santos Dumont",
+    "price": "R$ 100,00/dia",
     "labels": ["ultimosdias"]
   },
   {
     "code": "HP556",
-    "origin": "GRU - Guarulhos",
-    "destiny": "SDU - Santos Dumont",
-    "miles": 1.986,
+    "city": "Guarulhos",
+    "price": "R$ 76,00/dia",
     "labels": ["novos"]
   },
   {
     "code": "HP589",
-    "origin": "VCP -Viracopos",
-    "destiny": "SDU - Santos Dumont",
-    "miles": 2.354,
+    "city": "Viracopos",
+    "price": "R$ 130,00/dia",
     "labels": ["promocao", "novos"]
   }
 ]

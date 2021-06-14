@@ -1,12 +1,27 @@
 <template>
   <v-container>
+    <v-tabs
+      background-color="rgba(0, 0, 0, 0.0)"
+      color="#44BBA4"
+      v-model="activeTab"
+    >
+      <v-tab
+        v-for="(tab, index) in tabs"
+        :key="index"
+      >
+        {{ tab.label }}
+      </v-tab>
+    </v-tabs>
     <v-data-table
-        :headers="headers"
-        :items="packages"
+        v-for="(table, index) in tables"
+        :key="index"
+        :headers="table.headers"
+        :items="table.packages"
         :items-per-page="4"
         class="elevation-4"
-        v-model="selected"
+        v-model="table.selected"
         item-key="name"
+        v-show="activeTab === table.id"
         show-select
     >
       <template v-slot:item.labels="{ item }">
@@ -27,18 +42,76 @@
     name: 'TopBar',
 
     data: () => ({
-      selected: [],
-      headers: [
-        {
-          align: 'start',
-          sortable: false,
-        },
-        { text: 'Código', value: 'code' },
-        { text: 'Nome', value: 'name' },
-        { text: 'Preço (R$)', value: 'price' },
-        { text: 'Etiquetas', value: 'labels' }
+      activeTab: '',
+      tabs: [
+        { label: 'Passagens', value: 'passagens' },
+        { label: 'Hotéis', value: 'hoteis' },
+        { label: 'Carros', value: 'carros' },
+        { label: 'Pacotes', value: 'pacotes' },
       ],
-      packages: require('../data/packages.json')
+      tables: {
+        passages: {
+          id: 0,
+          selected: [],
+          headers: [
+            {
+              align: 'start',
+              sortable: false,
+            },
+            {text: 'Código', value: 'code'},
+            {text: 'Origem', value: 'origin'},
+            {text: 'Destino', value: 'destiny'},
+            {text: 'Milhas', value: 'miles'},
+            {text: 'Etiquetas', value: 'labels'}
+          ],
+          packages: require('../data/passages.json')
+        },
+        hotels: {
+          id: 1,
+          selected: [],
+          headers: [
+            {
+              align: 'start',
+              sortable: false,
+            },
+            {text: 'Código', value: 'code'},
+            {text: 'Cidade', value: 'city'},
+            {text: 'Preço', value: 'price'},
+            {text: 'Etiquetas', value: 'labels'}
+          ],
+          packages: require('../data/hotels.json')
+        },
+        cars: {
+          id: 2,
+          selected: [],
+          headers: [
+            {
+              align: 'start',
+              sortable: false,
+            },
+            {text: 'Código', value: 'code'},
+            {text: 'Cidade', value: 'city'},
+            {text: 'Preço', value: 'price'},
+            {text: 'Etiquetas', value: 'labels'}
+          ],
+          packages: require('../data/hotels.json')
+        },
+        packages: {
+          id: 3,
+          selected: [],
+          headers: [
+            {
+              align: 'start',
+              sortable: false,
+            },
+            {text: 'Código', value: 'code'},
+            {text: 'Nome', value: 'name'},
+            {text: 'Preço (R$)', value: 'price'},
+            {text: 'Etiquetas', value: 'labels'}
+          ],
+          packages: require('../data/packages.json')
+        }
+      }
     }),
     methods: {
       colorLabels (label) {
