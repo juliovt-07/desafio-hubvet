@@ -1,0 +1,30 @@
+[
+  {
+    "code": "HP556",
+    "origin": "CGH - Congonhas",
+    "destiny": "SDU - Santos Dumont",
+    "miles": 3.227,
+    "labels": ["promocao"]
+  },
+  {
+    "code": "HP504",
+    "origin": "SDU - Santos Dumont",
+    "destiny": "CGH - Congonhas",
+    "miles": 2.621,
+    "labels": ["ultimosdias"]
+  },
+  {
+    "code": "HP556",
+    "origin": "GRU - Guarulhos",
+    "destiny": "SDU - Santos Dumont",
+    "miles": 1.986,
+    "labels": ["novos"]
+  },
+  {
+    "code": "HP589",
+    "origin": "VCP -Viracopos",
+    "destiny": "SDU - Santos Dumont",
+    "miles": 2.354,
+    "labels": ["promocao", "novos"]
+  }
+]
