@@ -7,7 +7,7 @@
         dense
         class="px-3"
     >
-      <img src="../assets/logo.png" alt="logo" :width="imgSize">
+      <img src="../assets/logo.png" alt="logo" id="logo" class="ml-n16">
 
       <v-spacer></v-spacer>
 
@@ -44,5 +44,6 @@
 </script>
 
 <style lang="sass">
-
+#logo
+  transform: scale(0.4)
 </style>
