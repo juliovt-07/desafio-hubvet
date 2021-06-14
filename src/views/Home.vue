@@ -27,7 +27,7 @@
           <InputText @update-city="updateCity"/>
         </v-col>
         <v-col sm="3" lg="1" class="mt-n5 mx-3">
-          <CustomRadio/>
+          <CustomRadio @update-custom-radio="updateCustomRadio"/>
         </v-col>
         <v-col sm="6" lg="4"  class="mb-1 mx-3">
           <SelectChips @update-select-chips="updateSelectChips"/>
@@ -84,6 +84,9 @@ import SelectChips from "@/components/SelectChips";
       },
       updateCity(value) {
         this.filter.city = value
+      },
+      updateCustomRadio(value) {
+        this.filter.valueOrder = value
       },
       updateSelectChips(value) {
         this.filter.labels = value

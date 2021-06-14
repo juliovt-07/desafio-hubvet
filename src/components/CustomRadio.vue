@@ -29,6 +29,11 @@
       radioSelect(value) {
         this.radioSelected = value
       }
+    },
+    watch: {
+      radioSelected(value) {
+        this.$emit('update-custom-radio', value)
+      }
     }
   }
 </script>
