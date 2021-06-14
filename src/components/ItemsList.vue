@@ -4,7 +4,7 @@
         :headers="headers"
         :items="packages"
         :items-per-page="4"
-        class="elevation-1"
+        class="elevation-4"
         v-model="selected"
         item-key="name"
         show-select
